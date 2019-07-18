@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+  <parameter name="password" value="sweetma#"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <parameter name="email" value="mamta.kathane@gmail.com"/>
+  <test name="Test1(failed)">
+    <parameter name="password" value="sweetma#"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <parameter name="email" value="mamta.kathane@gmail.com"/>
+    <classes>
+      <class name="com.parameter.ParameterTest">
+        <methods>
+          <include name="ParameterTest1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.parameter.ParameterTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [suite1] -->
